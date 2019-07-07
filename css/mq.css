@@ -1,0 +1,646 @@
+/*
+
+▒█▀▄▀█ █▀▀ █▀▀▄ ░▀░ █▀▀█ 　 ▒█▀▀█ █░░█ █▀▀ █▀▀█ ░▀░ █▀▀ █▀▀
+▒█▒█▒█ █▀▀ █░░█ ▀█▀ █▄▄█ 　 ▒█░▒█ █░░█ █▀▀ █▄▄▀ ▀█▀ █▀▀ ▀▀█
+▒█░░▒█ ▀▀▀ ▀▀▀░ ▀▀▀ ▀░░▀ 　 ░▀▀█▄ ░▀▀▀ ▀▀▀ ▀░▀▀ ▀▀▀ ▀▀▀ ▀▀▀
+
+*/
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* >>>>>>>> I M P O R T A N T ! <<<<<<<<< */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 767px){
+    #gravllCollapse {
+        position: absolute;
+        width: 100%;
+        margin-top: 26px;
+        background: #000000;
+        border-top: 2px solid #3AAAF2;
+        padding-bottom: 46px;
+        padding-top: 6px;
+        z-index: 22;
+    }
+
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Login Modal ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .gravll_modal_dialog.login_dialog {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .gravll_modal_dialog.login_dialog {
+        width: 475px;
+    }
+}
+
+@media screen and (max-width: 524px){
+    .gravll_modal_dialog.login_dialog {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 422px){
+    .gravll_modal_dialog.login_dialog {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .gravll_modal_dialog.login_dialog {
+        width: 275px;
+    }
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Sign Up Modal ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .gravll_modal_dialog.signup_dialog {
+        width: 600px;
+    }
+
+    .special_note_holder {padding-top: 3%;}
+}
+
+@media screen and (max-width: 650px){
+    .gravll_modal_dialog.signup_dialog {
+        width: 475px;
+    }
+}
+
+@media screen and (max-width: 524px){
+    .gravll_modal_dialog.signup_dialog {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 422px){
+    .gravll_modal_dialog.signup_dialog {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    small.date_of_birth_label {left: 0;}
+}
+
+@media screen and (max-width: 350px){
+    .gravll_modal_dialog.signup_dialog {
+        width: 275px;
+    }
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Quote Modal ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1240px){
+    .modal-dialog.gravll_modal_dialog_xl {width: 910px;}
+}
+
+@media screen and (max-width: 986px){
+    .modal-dialog.gravll_modal_dialog_xl {width: 770px;}
+}
+
+@media screen and (max-width: 840px){
+    .modal-dialog.gravll_modal_dialog_xl {width: 700px;}
+}
+
+@media screen and (max-width: 767px){
+    .grvl_submit_btn_holder_2 {padding-top: 5px;}
+
+    .modal-dialog.gravll_modal_dialog_xl {width: 575px;}
+}
+
+@media screen and (max-width: 655px){
+    .modal-dialog.gravll_modal_dialog_xl {width: 505px;}
+}
+
+@media screen and (max-width: 565px){
+    .modal-dialog.gravll_modal_dialog_xl {width: 425px;}
+}
+
+@media screen and (max-width: 499px){
+    .modal-dialog.gravll_modal_dialog_xl {width: 345px;}
+}
+
+@media screen and (max-width: 400px){
+    .modal-dialog.gravll_modal_dialog_xl {width: 305px;}
+    .grvl_form_group {padding: 0;}
+}
+
+@media screen and (max-width: 350px){
+    .modal-dialog.gravll_modal_dialog_xl {width: 275px;}
+
+    button.grvl_submit_form_btn {width: 200px;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Quick Message Modal ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .gravll_modal_dialog.quick_message_dialog {
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .gravll_modal_dialog.quick_message_dialog {
+        width: 475px;
+    }
+}
+
+@media screen and (max-width: 524px){
+    .gravll_modal_dialog.quick_message_dialog {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 422px){
+    .gravll_modal_dialog.quick_message_dialog {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .gravll_modal_dialog.quick_message_dialog {
+        width: 275px;
+    }
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Navigation ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1140px){
+    ul.gravll_main_menu li {margin-right: 8px;}
+}
+
+@media screen and (max-width: 1066px){
+    ul.gravll_main_menu li a {font-size: 0.88rem;}
+    button.grvl_login_btn {font-size: 0.88rem;}
+}
+
+@media screen and (max-width: 956px){
+    ul.gravll_main_menu li a {font-size: 0.73rem;}
+    button.grvl_login_btn {font-size: 0.73rem; width: 120px;}
+
+    a.user_thumb {margin-right: 20px;}
+    button.grvl_logout_btn {font-size: 0.73rem; width: 120px;}
+}
+
+@media screen and (max-width: 860px){
+    ul.gravll_main_menu li {margin-right: 0;}
+    a.user_thumb {margin-right: 12px;}
+}
+
+@media screen and (max-width: 804px){
+    ul.gravll_main_menu li a {font-size: 0.66rem;}
+    button.grvl_logout_btn {font-size: 0.66rem; width: 100px;}
+}
+
+@media screen and (max-width: 767px){
+    ul.gravll_main_menu {top: 2px;}
+
+    ul.gravll_main_menu li a {
+        display: inline-block;
+    }
+
+    a.grvl_menu_link:before {
+        width: 100%;
+        height: 1px;
+        bottom: 10px;
+        left: 20%;
+    }
+
+    button.grvl_login_btn {top: 12px; left: 11px;}
+
+    ul.gravll_main_menu li a {font-size: 0.9rem;}
+    button.grvl_login_btn {font-size: 0.9rem; width: 150px;}
+    button.grvl_logout_btn {font-size: 0.9rem; width: 150px;}
+
+    a.user_thumb {position: relative; left: 20px; margin-right: 40px;}
+    .logged_in_elements {margin-top: 20px;}
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Header ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+@media screen and (max-width: 1353px){
+    .title_double_texts {width: 93%;}
+}
+
+@media screen and (max-width: 1017px){
+    .title_double_texts {width: 100%;}
+}
+
+@media screen and (max-width: 946px){
+    .title_double_texts h1 {font-size: 5.5rem;}
+}
+
+@media screen and (max-width: 867px){
+    .title_double_texts h1 {font-size: 5rem;}
+    button.grvl_main_cta_btn {top: -110px;}
+}
+
+@media screen and (max-width: 788px){
+    .title_double_texts h1 {font-size: 4.2rem;}
+    button.grvl_main_cta_btn {top: -140px;}
+    .title_double_texts h5 {font-size: 1.2rem;}
+}
+
+@media screen and (max-width: 698px){
+    .h_banner {width: 85%;}
+    .title_double_texts h5 {font-size: 1.1rem;}
+    .title_double_texts {top: 110px;}
+    button.grvl_main_cta_btn {top: -90px;}
+
+    .gravll_homepage_header {min-height: 676px;}
+}
+
+@media screen and (max-width: 468px){
+    .title_double_texts h5 {font-size: 0.7rem;}
+    .title_double_texts h1 {font-size: 3.6rem;}
+}
+
+@media screen and (max-width: 400px){
+    .title_double_texts h5 {font-size: 0.7rem; line-height: 2;}
+    .title_double_texts h1 {font-size: 3rem;}
+}
+
+@media screen and (max-width: 334px){
+    .title_double_texts h1 {font-size: 2.8rem;}
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== What We Do ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .logo_decoration {height: 660px;}
+}
+
+@media screen and (max-width: 767px){
+    .who_we_are_area {padding-top: 55px;}
+    .logo_decoration {height: 290px; margin-bottom: 55px;}
+
+    h5.sub_ttl {text-align: center;}
+    h1.main_ttl {text-align: center;}
+
+    .who_we_are_socials_holder {text-align: center;}
+    ul.who_we_are_socials {display: inline-block;}
+    ul.who_we_are_socials li:last-child {margin-right: 0;}
+}
+
+@media screen and (max-width: 555px){
+    .who_we_are_txt {
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Our Services ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .centered_btn_holder {padding-top: 155px;}
+}
+
+@media screen and (max-width: 991px){
+    .our_services_area {min-height: 970px;}
+
+    .centered_btn_holder {padding-top: 185px;}
+
+    .service_thumb {height: 170px;}
+    span.service_icon {height: 60px;}
+    h3.service_title {font-size: 1.2rem;}
+}
+
+@media screen and (max-width: 767px){
+    .service_thumb_outerbox {width: 60%; margin: 0 auto;}
+    .service_thumbs_holder {margin-bottom: 0;}
+    .centered_btn_holder {padding-top: 100px;}
+}
+
+@media screen and (max-width: 500px){
+    .service_thumb_outerbox {width: 75%;}
+}
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Careers ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .jobs_stripes_holder {width: 100%;}
+    .job_image {height: 100vh; width: 100vw; object-fit: cover;}
+}
+
+@media screen and (max-width: 767px){
+    .jobs_stripes_holder {width: 85%;}
+    .job_image {height: initial; width: initial; object-fit: initial;}
+
+    .job_image_box {border-top-left-radius: 4px; border-bottom-left-radius: 0; border-top-right-radius: 4px;}
+    .job_well {display: table;}
+    .apply_button_holder {height: auto; padding-bottom: 22px;}
+
+    p.job_description_text {margin-bottom: 22px;}
+    .job_description_text_box {padding-right: 6px;}
+}
+
+@media screen and (max-width: 420px){
+    p.job_description_text {font-size: 0.88rem;}
+}
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Testimonials =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .t_box {height: 215px;}
+    p.t_text {font-size: 0.93rem;}
+
+    .t_person_holder {position: relative; top: 28px;}
+}
+
+@media screen and (max-width: 420px){
+    .t_box {height: 245px;}
+    p.t_text {font-size: 0.93rem;}
+
+    .t_person_holder {position: relative; top: 60px;}
+}
+
+@media screen and (max-width: 400px){
+    p.t_text {font-size: 0.8rem;}
+}
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== News & Blogs =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    h3.news_title {font-size: 1.1rem;}
+    p.news_text {font-size: 0.9rem;}
+}
+
+@media screen and (max-width: 767px){
+    .newsbox {margin-bottom: 32px; min-height: 420px;}
+    .news_image {height: 200px;}
+    .news_thumbnail {height: 200px;}
+
+    h3.news_title {font-size: 1.4rem; height: 20px;}
+    p.news_text {font-size: 1rem; height: 100px;}
+}
+
+@media screen and (max-width: 475px){
+    .newsbox {margin-bottom: 32px; min-height: 450px;}
+    .news_image {height: 200px;}
+    .news_thumbnail {height: 200px;}
+
+    h3.news_title {font-size: 1.2rem; height: 20px;}
+    p.news_text {font-size: 0.9rem; height: 140px;}
+}
+
+@media screen and (max-width: 390px){
+    h3.news_title {font-size: 1.2rem; height: 30px;}
+}
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== FAQ =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .gravll_faq_answer_box {height: 217px;}
+    p.faq_answer {font-size: 0.8rem;}
+    ul.gravll_faq_pill li a {font-size: 0.8rem;}
+}
+
+@media screen and (max-width: 767px){
+    ul.gravll_faq_pill li.active > a:before, ul.gravll_faq_pill li.active > a:hover:before, ul.gravll_faq_pill li.active > a:focus:before {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+        border-color: transparent transparent transparent transparent;
+    }
+}
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Contact Options =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .contact_options_holder {width: 49%;}
+}
+
+@media screen and (max-width: 991px){
+    .contact_options_holder {width: 64%;}
+}
+
+@media screen and (max-width: 767px){
+    .c_option {float: none; margin-bottom: 22px; margin-right: 0;}
+    .contact_area {padding-top: 24px;}
+}
+
+@media screen and (max-width: 400px){
+    .contact_area {background-position: 0 -28px;}
+}
+
+@media screen and (max-width: 335px){
+    .contact_area {padding-top: 16px;}
+}
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Partners =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .partnerlogo_holder {margin-right: 32px;}
+}
+
+@media screen and (max-width: 991px){
+    .partnerlogo_holder {margin-right: 25px;}
+}
+
+@media screen and (max-width: 767px){
+    span.partnerlogo {display: block; margin: 0 auto; width: 200px; margin-bottom: 20px;}
+}
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Footer =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 922px){
+    ul.footer_links li a {font-size: 0.8rem;}
+    .footer_links_holder {width: 18%;}
+    .subscriber_holder {width: 35%;}
+}
+
+@media screen and (max-width: 888px){
+    ul.footer_links li a {font-size: 0.7rem;}
+}
+
+@media screen and (max-width: 767px){
+    span.footerlogo {display: inline-block; text-align: center; width: 100%; margin-bottom: 55px;}
+
+    footer.gravll_footer {padding-top: 55px; min-height: 650px;}
+    .footer_links_holder {width: 25%;}
+    .subscriber_holder {width: 45%;}
+}
+
+@media screen and (max-width: 730px){
+    span.ase_logo {top: 18px; height: 50px;}
+    small.footer_notes {font-size: 0.7rem;}
+    a.footer_social_icon {width: 22px; height: 22px;}
+    .footer_socials_holder {top: -40px;}
+    .footer_bottommost_stripe {height: 85px;}
+}
+
+@media screen and (max-width: 561px){
+    .footer_links_holder {width: 40%; left: 17%;}
+    .subscriber_holder {
+        width: 100%;
+        margin-top: 25px;
+        margin-bottom: 85px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .footer_bottommost_stripe {height: 160px;}
+    .footer_notes_holder {text-align: center; top: 30px;}
+    .subscriber_holder {margin-bottom: 105px;}
+    .footer_socials_holder {float: none; display: inherit; top: 45px; text-align: center;}
+    ul.footer_socials {text-align: center; display: inline-block;}
+
+}
+
+@media screen and (max-width: 360px){
+    .footer_links_holder {left: 8%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
