@@ -625,22 +625,185 @@
 
 
 
+/* =-=-=-=-=-=-=-=-=-= */
+/* =-=-=-=-=-=-=-=-=-= */
+/*
+▀█▀ █▀▀▄ █▀▀▄ █▀▀ █▀▀█ 　 ▒█▀▀█ █▀▀█ █▀▀▀ █▀▀ █▀▀
+▒█░ █░░█ █░░█ █▀▀ █▄▄▀ 　 ▒█▄▄█ █▄▄█ █░▀█ █▀▀ ▀▀█
+▄█▄ ▀░░▀ ▀░░▀ ▀▀▀ ▀░▀▀ 　 ▒█░░░ ▀░░▀ ▀▀▀▀ ▀▀▀ ▀▀▀
+*/
+/* =-=-=-=-=-=-=-=-=-= */
+/* =-=-=-=-=-=-=-=-=-= */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Inner Header =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 865px){
+    .h_banner_inner {width: 85%;}
+}
+
+@media screen and (max-width: 611px){
+    .h_banner_inner {width: 99%;}
+}
+
+@media screen and (max-width: 525px){
+    .title_double_texts_inner h1 {font-size: 3rem;}
+    .title_double_texts_inner h5 {font-size: 1rem;}
+}
+
+@media screen and (max-width: 410px){
+    .title_double_texts_inner h1 {font-size: 2.5rem;}
+    .title_double_texts_inner h5 {font-size: 0.9rem;}
+}
+
+@media screen and (max-width: 376px){
+    .title_double_texts_inner h1 {font-size: 2.2rem;}
+    .title_double_texts_inner h5 {font-size: 0.77rem;}
+}
+
+@media screen and (max-width: 355px){
+    .title_double_texts_inner h5 {font-size: 0.6rem;}
+}
+
+@media screen and (max-width: 330px){
+    .title_double_texts_inner h5 {font-size: 0.5rem;}
+}
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Video Area =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1262px){
+    span.decorative_rectangle_blue {right: 277px;}
+}
+
+@media screen and (max-width: 1199px){
+    span.decorative_rectangle_blue {right: 200px;}
+    .video_player_holder {top: 155px;}
+}
+
+@media screen and (max-width: 991px){
+    .video_player_holder {top: 0; width: 100%}
+    span.decorative_rectangle_blue {left: -5%;}
+    span.decorative_rectangle_grey {left: 83%; bottom: 10px;}
+
+    .video_txt_holder {top: 55px;}
+    .section_title_holder h1 {text-align: center;}
+    .section_title_holder h5 {text-align: center;}
+
+    .about_us_video_area {padding-bottom: 135px;}
+
+    .video_txt_holder {padding-left: 20px;}
+}
+
+@media screen and (max-width: 858px){
+    .video_player_holder {width: 90%; margin: 0 auto;}
+}
+
+@media screen and (max-width: 767px){
+    span.decorative_rectangle_blue {left: 2%;}
+    span.decorative_rectangle_grey {left: 73%;}
+}
+
+@media screen and (max-width: 632px){
+    span.decorative_rectangle_grey {left: 63%; bottom: 90px;}
+    .video_txt_holder {top: -35px;}
+    .about_us_video_area {padding-bottom: 35px;}
+}
+
+@media screen and (max-width: 485px){
+    span.decorative_rectangle_grey {left: 55%; bottom: 170px;}
+    .video_txt_holder {top: -100px;}
+    .about_us_video_area {padding-bottom: 15px;}
+}
+
+@media screen and (max-width: 410px){
+    span.decorative_rectangle_grey {display: none;}
+    .video_player_holder {height: 355px;}
+}
+
+@media screen and (max-width: 360px){
+
+    .video_player_holder {height: 325px;}
+}
 
 
 
 
 
 
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Benefits =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1254px){
+    h2.benefit_title {font-size: 1.1rem;}
+}
+
+@media screen and (max-width: 1160px){
+    h2.benefit_title {font-size: 1rem;}
+}
+
+@media screen and (max-width: 1070px){
+    h2.benefit_title {font-size: 0.9rem;}
+}
+
+@media screen and (max-width: 1070px){
+    .benefit_holder {margin-bottom: 35px;}
+    .benefits_request_a_quote_btn_holder {padding-top: 30px;}
+}
+
+@media screen and (max-width: 991px){
+    .benefits_request_a_quote_btn_holder {padding-top: 10px;}
+}
+
+@media screen and (max-width: 767px){
+    .benefits_area {min-height: 900px; padding-bottom: 170px;}
+    .benefits_request_a_quote_btn_holder {padding-top: 70px;}
+
+    h2.benefit_title {font-size: 1.33rem;}
+    .benefit_circle {height: 125px; width: 125px;}
+    .benefit_icon {height: 60px;}
+    .benefit_holder {display: block;}
+}
+
+@media screen and (max-width: 375px){
+    .benefits_request_a_quote_btn_holder {padding-top: 70px;}
+    h2.benefit_title {font-size: 1.1rem;}
+}
 
 
 
 
 
 
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Philosophy =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
 
+/* >>>>> SM/XS <<<<< */
 
+@media screen and (max-width: 991px){
+    .non_centered_btn_holder {text-align: center; padding-top: 65px;}
 
+    .logo_decoration_holder_2 {padding-left: 2px;}
+    .logo_decoration_2 {height: 200px;}
 
+    .philosophy_area {padding-top: 25px;}
+}
 
-
-
+@media screen and (max-width: 660px){
+    .non_centered_btn_holder {padding-top: 85px;}
+    .philosophy_area {padding-top: 0;}
+}
