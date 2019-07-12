@@ -17,7 +17,7 @@
     #gravllCollapse {
         position: absolute;
         width: 100%;
-        margin-top: 26px;
+        margin-top: 25px;
         background: #000000;
         border-top: 2px solid #3AAAF2;
         padding-bottom: 46px;
@@ -766,11 +766,15 @@
 
 @media screen and (max-width: 991px){
     .benefits_request_a_quote_btn_holder {padding-top: 10px;}
+
+    .application_form {width: 99%; top: -76px;}
 }
 
 @media screen and (max-width: 767px){
     .benefits_area {min-height: 900px; padding-bottom: 170px;}
     .benefits_request_a_quote_btn_holder {padding-top: 70px;}
+
+    .application_form {width: 95%;}
 
     h2.benefit_title {font-size: 1.33rem;}
     .benefit_circle {height: 125px; width: 125px;}
@@ -778,9 +782,23 @@
     .benefit_holder {display: block;}
 }
 
+@media screen and (max-width: 470px){
+    span.paperplane {width: 99px;}
+}
+
+@media screen and (max-width: 400px){
+    span.recruiter_image {width: 60px; height: 60px;}
+    .recruiter_info_holder {top: -18px; left: 4px;}
+    span.paperplane {right: -6px; top: -40px;}
+}
+
 @media screen and (max-width: 375px){
     .benefits_request_a_quote_btn_holder {padding-top: 70px;}
     h2.benefit_title {font-size: 1.1rem;}
+}
+
+@media screen and (max-width: 334px){
+    span.paperplane {width: 60px;}
 }
 
 
@@ -807,3 +825,84 @@
     .non_centered_btn_holder {padding-top: 85px;}
     .philosophy_area {padding-top: 0;}
 }
+
+
+
+
+
+
+/* >>>>>>>>>>>> ALL CAREERS <<<<<<<<<<<< */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Philosophy =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .careers_filter_holder {left: 0;}
+}
+
+@media screen and (max-width: 767px){
+    .careers_filter_area {min-height: 375px;}
+    .filter_ttl h5 {text-align: center;}
+
+    .filter_btn_holder {padding-left: 47%;}
+}
+
+@media screen and (max-width: 475px){
+    .filter_btn_holder {padding-left: 44%;}
+}
+
+
+
+
+
+/* >>>>>>>>>>>> JOB DETAILS <<<<<<<<<<<< */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Philosophy =========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    ul.qr_list li {text-indent: -10px;}
+    h5.qr_list_title {position: relative; left: -20px;}
+}
+
+@media screen and (max-width: 991px){
+    h2.compensation_title {font-size: 0.9rem;}
+
+    article.responsibilities_summary {width: 88%;}
+}
+
+@media screen and (max-width: 870px){
+    h5.qr_list_title {font-size: 1.1rem;}
+}
+
+@media screen and (max-width: 767px){
+    .qualifications_list_holder.responsibilities {padding-left: 20px;}
+    .qualifications_list_holder {margin-bottom: 50px;}
+
+    .responsibilities_and_qualifications_area {padding-bottom: 24px;}
+
+    ul.qr_list li {text-indent: 0;}
+    h5.qr_list_title {left: 0;}
+}
+
+@media screen and (max-width: 540px){
+    ul.qr_list li > i {font-size: 1rem;}
+    ul.qr_list li {font-size: 0.9rem;}
+}
+
+
+
+
+
+
+
+
+
+
+
