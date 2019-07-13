@@ -901,6 +901,47 @@
 
 
 
+/* >>>>>>>>>>>> SERVICES <<<<<<<<<<<< */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    aside.services_tabs_holder {padding-right: 0;}
+}
+
+
+
+
+
+
+
+/* >>>>>>>>>>>> ALL NEWS <<<<<<<<<<<< */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .news_filter_holder {left: 65px;}
+}
+
+@media screen and (max-width: 991px){
+    .news_filter_holder {left: 20px;}
+}
+
+@media screen and (max-width: 767px){
+    .news_filter_holder {left: 0;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

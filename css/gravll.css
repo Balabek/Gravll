@@ -45,6 +45,10 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
     outline: 0 none;
 }
 
+input:disabled, input[disabled] {
+    opacity: 0.5 !important;
+}
+
 button {border-radius: 2px;}
 
 .navbar-toggle {
@@ -1308,7 +1312,7 @@ span.dotted_square {
 
 
 /* ============= */
-/* =========== FAQ =========== */
+/* =========== CONTACT =========== */
 /* ============= */
 
 .contact_area {
@@ -3101,6 +3105,249 @@ button.submit_application_btn::before {
 button.submit_application_btn:hover::before {
     opacity: 1;
 }
+
+
+
+
+
+/* >>>>>>>>>>>> SERVICES <<<<<<<<<<<< */
+
+.gravll_inner_header.services_header {
+    position: relative;
+    min-height: 475px;
+    height: auto;
+    background-size: cover;
+}
+
+.gravll_inner_header.services_header::after {
+    content: "";
+    background: url('../img/services_bgd.jpg') center center no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    -webkit-filter: brightness(45%);
+    filter: brightness(45%);
+}
+
+.services_midmain_area {
+    position: relative;
+    min-height: 900px;
+    height: auto;
+    background: #f7f7f7;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+aside.services_tabs_holder {
+    padding-left: 0;
+}
+
+ul.gravll_services_pill li {
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+
+.gravll_services_pill > li.active > a, .gravll_services_pill > li.active > a:hover, .gravll_services_pill > li.active > a:focus {
+    color: #fff;
+    background-image: linear-gradient(to left, #3AAAF2 0%, #4F8CF7 51%, #715AFF 100%);
+    border: transparent;
+}
+
+
+.gravll_services_pill > li.active span.service_tab_icon {
+    filter: grayscale(100%) brightness(0) invert(1);
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+ul.gravll_services_pill li a {
+    font-family: Panton, sans-serif;
+    font-weight: 700;
+    color: #666666;
+    padding-left: 12px;
+    padding-top: 0;
+    border: 1px solid #ADADAD;
+    /*background: #ffffff;*/
+    background-image: linear-gradient(to left, #ffffff 0%, #ffffff 51%, #ffffff 100%);
+    font-size: 1.1rem;
+
+    display: inline-block;
+    vertical-align: middle;
+
+    position: relative;
+    width: 100%;
+    height: 55px;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+ul.gravll_services_pill li a:focus span.service_tab_icon {
+    filter: grayscale(100%) brightness(0) invert(1);
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+span.service_tab_icon {
+    position: relative;
+    z-index: 30;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    top: 10px;
+}
+
+span.service_tab_icon.battery {background: url('../img/battery.png') center center no-repeat; background-size: contain;}
+span.service_tab_icon.brakes {background: url('../img/brakes.png') center center no-repeat; background-size: contain;}
+span.service_tab_icon.engine {background: url('../img/engine.png') center center no-repeat; background-size: contain;}
+span.service_tab_icon.filters {background: url('../img/filters.png') center center no-repeat; background-size: contain;}
+span.service_tab_icon.suspension {background: url('../img/suspension.png') center center no-repeat; background-size: contain;}
+span.service_tab_icon.fluids {background: url('../img/fluids.png') center center no-repeat; background-size: contain;}
+span.service_tab_icon.bulbs {background: url('../img/bulbs.png') center center no-repeat; background-size: contain;}
+span.service_tab_icon.tires {background: url('../img/tires.png') center center no-repeat; background-size: contain;}
+
+.services_details_holder {
+    min-height: 700px;
+    height: auto;
+    background: #ffffff;
+    border: none;
+    padding: 18px 18px 50px 18px;
+}
+
+h1.service_content_title {
+    font-family: Panton,sans-serif;
+    font-weight: 700;
+    color: #000000;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.klir {
+    height: 999px;
+}
+
+article.service_description {
+    height: auto;
+}
+
+article.service_description p {
+    font-size: 1rem;
+    color: #000000;
+    text-align: left;
+}
+
+.subservice_list_holder {
+    padding-top: 22px;
+    margin-bottom: 42px;
+}
+
+ul.subservice_list {
+    padding-left: 0;
+}
+
+ul.subservice_list li {
+    font-family: Panton, sans-serif;
+    font-weight: 700;
+    color: #666666;
+    list-style-type: none;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+ul.subservice_list li i {
+    font-size: 1.2rem;
+    color: #3AAAF2;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+/* >>>>>>>>>>>> NEWS & BLOGS INNER <<<<<<<<<<<< */
+
+.gravll_inner_header.news_header {
+    position: relative;
+    min-height: 475px;
+    height: auto;
+    background-size: cover;
+}
+
+.gravll_inner_header.news_header::after {
+    content: "";
+    background: url('../img/news_bgd.jpg') center center no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    -webkit-filter: brightness(45%);
+    filter: brightness(45%);
+}
+
+.news_filter_holder {
+    position: relative;
+    left: 100px;
+    padding-top: 4px;
+}
+
+button.news_search {
+    position: absolute;
+    right: 22px;
+    z-index: 2;
+    top: 37px;
+    background: transparent;
+    border: none !important;
+}
+
+button.news_search i {
+    font-size: 1.2rem;
+    color: #78909C;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+button.news_search i:hover {
+    color: #3AAAF2;
+}
+
+.news_box_holder {
+    margin-bottom: 32px;
+}
+
+.additional_bottommargin {
+    margin-bottom: 55px;
+}
+
+
+
+
+
+
 
 
 
