@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GRAVLL | News & Blogs | News Title Goes Here</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-32x32.png">
+    <link rel="manifest" href="img/favicon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=0">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/47dff7d085.js"></script>
+
+    <!-- Bootstrap + Custom Stylez -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet" type="text/css">
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/animate.css" rel="stylesheet" media="all">
+    <link href="css/webfonts.css" rel="stylesheet" media="all">
+    <link href="slick-1.6.0/slick/slick.css" rel="stylesheet">
+    <link href="slick-1.6.0/slick/slick-theme.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet">
+    <link href="css/gravll.css" rel="stylesheet">
+    <link href="css/mq.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="gravllLoginModalDialog">
+    <div class="modal-dialog gravll_modal_dialog login_dialog" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="close_modal" aria-hidden="true"></span></button>
+        <div class="modal-content gravll_modal_content">
+            <span class="dotted_rhombus_decoration"></span>
+            <div class="modal-header gravll_modal_header">
+                <h4 class="modal-title" id="login">LOGIN</h4>
+            </div>
+            <div class="modal-body gravll_modal_body">
+                <div class="modal_form_holder">
+                    <form role="form" id="gravllLoginForm" class="gravll_modal_form">
+                        <div class="form-group grvl_form_group">
+                            <label for="yourEmail"></label>
+                            <input type="text" class="form-control gravll_input" id="yourEmail" placeholder="EMAIL" onfocus="placeholder='' " onblur="placeholder='EMAIL' ">
+                        </div>
+                        <div class="form-group grvl_form_group">
+                            <label for="yourPassword"></label>
+                            <input type="password" class="form-control gravll_input" id="yourPassword" placeholder="PASSWORD" onfocus="placeholder='' " onblur="placeholder='PASSWORD' ">
+                        </div>
+                        <div class="grvl_submit_btn_holder text-center">
+                            <button type="submit" class="btn grvl_submit_form_btn">LOGIN</button>
+                        </div>
+                        <div class="checkbox_holder">
+                            <input class="inp-cbx" id="cbx" type="checkbox" style="display: none;"/>
+                            <label class="cbx" for="cbx"><span>
+                            <svg width="12px" height="10px" viewbox="0 0 12 10">
+                              <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                            </svg></span><span>
+                                Remember me
+                            </span></label>
+                        </div>
+                        <div class="forgot_password_link_holder">
+                            <a href="#">Forgot Password?</a>
+                        </div>
+                        <div class="login_signup_prompt_holder">
+                            <p>Don't have an account? <a href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a> here</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- Login Modal END -->
+
+
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="gravllLoginModalDialog">
+    <div class="modal-dialog gravll_modal_dialog signup_dialog" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="close_modal" aria-hidden="true"></span></button>
+        <div class="modal-content gravll_modal_content_signup">
+            <span class="dotted_rhombus_decoration"></span>
+            <div class="modal-header gravll_modal_header">
+                <h4 class="modal-title" id="signup">SIGN UP</h4>
+            </div>
+            <div class="modal-body gravll_modal_body">
+                <div class="modal_form_holder">
+                    <form role="form" id="gravllsignupForm" class="gravll_modal_form">
+                        <div class="form-group grvl_form_group col-sm-12">
+                            <label for="registerYourName"></label>
+                            <input type="text" class="form-control gravll_input" id="registerYourName" placeholder="NAME" onfocus="placeholder='' " onblur="placeholder='NAME' " autocomplete="off">
+                        </div>
+                        <div class="form-group grvl_form_group col-sm-12">
+                            <label for="registerYourEmail"></label>
+                            <input type="text" class="form-control gravll_input" id="registerYourEmail" placeholder="EMAIL" onfocus="placeholder='' " onblur="placeholder='EMAIL' " autocomplete="off">
+                        </div>
+                        <div class="date_of_birth_selectors_holder">
+                            <small class="date_of_birth_label">Date of birth:</small>
+                            <div class="form-group grvl_form_group col-sm-4">
+                                <label for="registerYourBirthMonth"></label>
+                                <select id="registerYourBirthMonth">
+                                    <option>January</option>
+                                    <option>February</option>
+                                    <option>March</option>
+                                    <option>April</option>
+                                    <option>May</option>
+                                    <option>June</option>
+                                    <option>July</option>
+                                    <option>August</option>
+                                    <option>September</option>
+                                    <option>October</option>
+                                    <option>November</option>
+                                    <option>December</option>
+                                </select>
+                            </div>
+                            <div class="form-group grvl_form_group col-sm-4">
+                                <label for="registerYourBirthDay"></label>
+                                <select id="registerYourBirthDay">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                    <option>13</option>
+                                    <option>14</option>
+                                    <option>15</option>
+                                    <option>16</option>
+                                    <option>17</option>
+                                    <option>18</option>
+                                    <option>19</option>
+                                    <option>20</option>
+                                    <option>21</option>
+                                    <option>22</option>
+                                    <option>23</option>
+                                    <option>24</option>
+                                    <option>25</option>
+                                    <option>26</option>
+                                    <option>27</option>
+                                    <option>28</option>
+                                    <option>29</option>
+                                    <option>30</option>
+                                    <option>31</option>
+                                </select>
+                            </div>
+                            <div class="form-group grvl_form_group col-sm-4">
+                                <label for="registerYourBirthYear"></label>
+                                <select id="registerYourBirthYear">
+                                    <option>1930</option>
+                                    <option>1931</option>
+                                    <option>1932</option>
+                                    <option>1933</option>
+                                    <option>1934</option>
+                                    <option>1935</option>
+                                    <option>1936</option>
+                                    <option>1937</option>
+                                    <option>1938</option>
+                                    <option>1939</option>
+                                    <option>1940</option>
+                                    <option>1940</option>
+                                    <option>1941</option>
+                                    <option>1942</option>
+                                    <option>1943</option>
+                                    <option>1944</option>
+                                    <option>1945</option>
+                                    <option>1946</option>
+                                    <option>1947</option>
+                                    <option>1948</option>
+                                    <option>1949</option>
+                                    <option>1950</option>
+                                    <option>1951</option>
+                                    <option>1952</option>
+                                    <option>1953</option>
+                                    <option>1954</option>
+                                    <option>1955</option>
+                                    <option>1956</option>
+                                    <option>1957</option>
+                                    <option>1958</option>
+                                    <option>1959</option>
+                                    <option>1960</option>
+                                    <option>1961</option>
+                                    <option>1962</option>
+                                    <option>1963</option>
+                                    <option>1964</option>
+                                    <option>1965</option>
+                                    <option>1966</option>
+                                    <option>1967</option>
+                                    <option>1968</option>
+                                    <option>1969</option>
+                                    <option>1970</option>
+                                    <option>1971</option>
+                                    <option>1972</option>
+                                    <option>1973</option>
+                                    <option>1974</option>
+                                    <option>1975</option>
+                                    <option>1976</option>
+                                    <option>1977</option>
+                                    <option>1978</option>
+                                    <option>1979</option>
+                                    <option>1980</option>
+                                    <option>1981</option>
+                                    <option>1982</option>
+                                    <option>1983</option>
+                                    <option>1984</option>
+                                    <option>1985</option>
+                                    <option>1986</option>
+                                    <option>1987</option>
+                                    <option>1988</option>
+                                    <option>1989</option>
+                                    <option>1990</option>
+                                    <option>1991</option>
+                                    <option>1992</option>
+                                    <option>1993</option>
+                                    <option>1994</option>
+                                    <option>1995</option>
+                                    <option>1996</option>
+                                    <option>1997</option>
+                                    <option>1998</option>
+                                    <option>1999</option>
+                                    <option>2000</option>
+                                    <option>2001</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group grvl_form_group col-sm-12">
+                            <label for="registerYourPassword"></label>
+                            <input type="password" class="form-control gravll_input" id="registerYourPassword" placeholder="PASSWORD" onfocus="placeholder='' " onblur="placeholder='PASSWORD' " autocomplete="off">
+                        </div>
+                        <div class="form-group grvl_form_group col-sm-12">
+                            <label for="confirmYourPassword"></label>
+                            <input type="password" class="form-control gravll_input" id="confirmYourPassword" placeholder="CONFIRM PASSWORD" onfocus="placeholder='' " onblur="placeholder='CONFIRM PASSWORD' " autocomplete="off">
+                        </div>
+
+                        <div class="special_note_holder">
+                            <p>By clicking Sign Up, you agree to Gravll's <a>Terms and Conditions of Use</a> </p>
+                        </div>
+
+                        <div class="grvl_submit_btn_holder text-center">
+                            <button type="submit" class="btn grvl_submit_form_btn">SIGN UP</button>
+                        </div>
+
+                        <hr class="signup_separator">
+
+                        <div class="special_note_holder_2">
+                            <p>To learn more about how Gravll collects, uses, shares and protects your personal
+                                data please read Gravll's <a>Privacy Policy</a>
+                            </p>
+                        </div>
+
+                        <div class="mini_warning_holder">
+                            <p><i class="fas fa-exclamation-triangle"></i>You must be 18 years of age or older to use this site.</p>
+                        </div>
+
+                        <div class="login_signup_prompt_holder">
+                            <p>Already have an account with Gravll? <a href="#">Login</a> here</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- Sign Up Modal END -->
+
+<!-- Quote Modal -->
+<div class="modal fade" id="quoteModal" tabindex="-1" role="dialog" aria-labelledby="gravllQuoteModalDialog">
+    <div class="modal-dialog gravll_modal_dialog_xl" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="close_modal" aria-hidden="true"></span></button>
+        <div class="modal-content gravll_modal_content_xl">
+            <span class="dotted_rhombus_decoration"></span>
+            <div class="modal-header gravll_modal_header">
+                <h4 class="modal-title" id="quote">REQUEST A QUOTE</h4>
+            </div>
+            <div class="modal-body gravll_modal_body">
+                <div class="modal_form_holder">
+                    <form role="form" id="gravllQuoteForm" class="gravll_modal_form">
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="firstName"></label>
+                            <input type="text" class="form-control gravll_input" id="firstName" placeholder="FIRST NAME" onfocus="placeholder='' " onblur="placeholder='FIRST NAME' " autocomplete="off">
+                        </div>
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="lastName"></label>
+                            <input type="password" class="form-control gravll_input" id="lastName" placeholder="LAST NAME" onfocus="placeholder='' " onblur="placeholder='LAST NAME' " autocomplete="off">
+                        </div>
+
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="email"></label>
+                            <input type="text" class="form-control gravll_input" id="email" placeholder="EMAIL" onfocus="placeholder='' " onblur="placeholder='EMAIL' " autocomplete="off">
+                        </div>
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="phone"></label>
+                            <input type="password" class="form-control gravll_input" id="phone" placeholder="PHONE" onfocus="placeholder='' " onblur="placeholder='PHONE' " autocomplete="off">
+                        </div>
+
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="zip"></label>
+                            <input type="text" class="form-control gravll_input" id="zip" placeholder="ZIP/POSTAL CODE" onfocus="placeholder='' " onblur="placeholder='ZIP/POSTAL CODE' " autocomplete="off">
+                        </div>
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="address"></label>
+                            <input type="password" class="form-control gravll_input" id="address" placeholder="ADDRESS" onfocus="placeholder='' " onblur="placeholder='ADDRESS' " autocomplete="off">
+                        </div>
+
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="vehicleMake"></label>
+                            <select id="vehicleMake"> <!-- The list must be injected by the corresponding JSON -->
+                                <option></option>
+                                <option>Ford</option>
+                                <option>Jeep</option>
+                                <option>Chevrolet</option>
+                                <option>BMW</option>
+                                <option>Nissan</option>
+                                <option>Toyota</option>
+                                <option>Honda</option>
+                                <option>Opel</option>
+                                <option>ErAZ</option>
+                            </select>
+                        </div>
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="vehicleModel"></label>
+                            <select id="vehicleModel"> <!-- The list must be injected by the corresponding JSON -->
+                                <option></option>
+                                <option>Silvia R15</option>
+                                <option>550 SL</option>
+                                <option>Corsa</option>
+                                <option>Aventador SVJ</option>
+                                <option>Mustang GT</option>
+                                <option>488 Pista</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="vehicleYear"></label>
+                            <select id="vehicleYear">
+                                <option></option>
+                                <option>1992</option>
+                                <option>1993</option>
+                                <option>1994</option>
+                                <option>1995</option>
+                                <option>1996</option>
+                                <option>1997</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                                <option>2013</option>
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                            </select>
+                        </div>
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="vehicleMileage"></label>
+                            <select id="vehicleMileage">
+                                <option></option>
+                                <option>0 - 5000 Mi</option>
+                                <option>5000 - 15000 Mi</option>
+                                <option>15000 - 25000 Mi</option>
+                                <option>25000 - 35000 Mi</option>
+                                <option>35000 - 50000 Mi</option>
+                                <option>50000 - 70000 Mi</option>
+                                <option>70000 - 90000 Mi</option>
+                                <option>90000 - 120000 Mi</option>
+                                <option>120000 - 150000 Mi</option>
+                            </select>
+                        </div>
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="datepicker"></label>
+                            <input type="text" class="form-control gravll_input datepicker-here" data-language='en' id="datepicker" placeholder="SELECT DATE" onfocus="placeholder='' " onblur="placeholder='SELECT DATE' " autocomplete="off">
+                        </div>
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="time"></label>
+                            <select id="time">
+                                <option></option>
+                                <option>08:00 AM</option>
+                                <option>08:30 AM</option>
+                                <option>09:00 AM</option>
+                                <option>09:30 AM</option>
+                                <option>10:00 AM</option>
+                                <option>10:30 AM</option>
+                                <option>11:00 AM</option>
+                                <option>11:30 AM</option>
+                                <option>12:00 PM</option>
+                                <option>12:30 PM</option>
+                                <option>01:00 PM</option>
+                                <option>01:30 PM</option>
+                                <option>02:00 PM</option>
+                                <option>02:30 PM</option>
+                                <option>03:00 PM</option>
+                                <option>03:30 PM</option>
+                                <option>04:00 PM</option>
+                                <option>04:30 PM</option>
+                                <option>05:00 PM</option>
+                                <option>05:30 PM</option>
+                                <option>06:00 PM</option>
+                                <option>06:30 PM</option>
+                                <option>07:00 PM</option>
+                                <option>07:30 PM</option>
+                                <option>08:00 PM</option>
+                                <option>08:30 PM</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="service"></label>
+                            <select id="service">
+                                <option></option>
+                                <option>Batteries</option>
+                                <option>Brakes</option>
+                                <option>Engines</option>
+                                <option>Filters</option>
+                                <option>Suspension</option>
+                                <option>Fluids</option>
+                                <option>Bulbs</option>
+                                <option>Tires</option>
+                            </select>
+                        </div>
+                        <div class="form-group grvl_form_group col-sm-6">
+                            <label for="subService"></label>
+                            <select id="subService"> <!-- The sub-service list must be automatically loaded as soon as the main service is selected -->
+                                <option></option>
+                                <option>Subservice 01</option>
+                                <option>Subservice 02</option>
+                                <option>Subservice 03</option>
+                                <option>Subservice 04</option>
+                                <option>Subservice 05</option>
+                                <option>Subservice 06</option>
+                                <option>Subservice 07</option>
+                                <option>Subservice 08</option>
+                            </select>
+                        </div>
+
+                        <div class="grvl_submit_btn_holder_2 text-center">
+                            <button type="submit" class="btn grvl_submit_form_btn">SUBMIT</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- Quote Modal END -->
+
+<!-- Quick Message Modal -->
+<div class="modal fade" id="quickMessageModal" tabindex="-1" role="dialog" aria-labelledby="gravllLoginModalDialog">
+    <div class="modal-dialog gravll_modal_dialog quick_message_dialog" role="document">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="close_modal" aria-hidden="true"></span></button>
+        <div class="modal-content gravll_modal_content">
+            <span class="dotted_rhombus_decoration"></span>
+            <div class="modal-header gravll_modal_header">
+                <h4 class="modal-title" id="quickMessage">GET IN TOUCH</h4>
+            </div>
+            <div class="modal-body gravll_modal_body">
+                <div class="modal_form_holder">
+                    <form role="form" id="gravllQuickMessageForm" class="gravll_modal_form">
+                        <fieldset class="gravll_quick_message_fldst">
+                            <div class="form-group grvl_form_group">
+                                <label for="messageYourName"></label>
+                                <input type="text" class="form-control gravll_input" id="messageYourName" placeholder="NAME" onfocus="placeholder='' " onblur="placeholder='NAME' ">
+                            </div>
+                            <div class="form-group grvl_form_group">
+                                <label for="messageYourEmail"></label>
+                                <input type="password" class="form-control gravll_input" id="messageYourEmail" placeholder="EMAIL" onfocus="placeholder='' " onblur="placeholder='EMAIL' ">
+                            </div>
+                            <div class="form-group grvl_form_group">
+                                <label for="messageYourSubject"></label>
+                                <input type="password" class="form-control gravll_input" id="messageYourSubject" placeholder="SUBJECT" onfocus="placeholder='' " onblur="placeholder='SUBJECT' ">
+                            </div>
+                        </fieldset>
+                        <fieldset class="gravll_quick_message_fldst">
+                            <div class="form-group grvl_form_group">
+                                <label for="messageYourMessage"></label>
+                                <textarea class="form-control gravll_txtarea" id="messageYourMessage" placeholder="YOUR MESSAGE" onfocus="placeholder='' " onblur="placeholder='YOUR MESSAGE' "></textarea>
+                            </div>
+                        </fieldset>
+
+                        <div class="grvl_submit_btn_holder_3 text-center">
+                            <button type="submit" class="btn grvl_submit_form_btn">SEND</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> <!-- Quick Message Modal END -->
+
+<div class="outermost_wrapper">
+    <nav class="navbar navbar-default gravll_navbar ">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gravllCollapse" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/gravll_white.svg" class="img-responsive nav_main_logo" alt="Main logo icon">
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="gravllCollapse">
+                <ul class="nav navbar-nav gravll_main_menu navbar-right">
+                    <li><a class="grvl_menu_link" href="#">HOME</a></li>
+                    <li><a class="grvl_menu_link" href="#">ABOUT US</a></li>
+                    <li><a class="grvl_menu_link" href="#">SERVICES</a></li>
+                    <li><a class="grvl_menu_link" href="#">NEWS & BLOGS</a></li>
+                    <li><a class="grvl_menu_link" href="#">CONTACT</a></li>
+                    <li><button class=" btn grvl_login_btn" data-toggle="modal" data-target="#loginModal">Login</button></li> <!-- The 'logged_in_elements' <li> must be hidden when this one is active -->
+                    <li class="hide logged_in_elements"> <!-- The logged in elements section should be hidden when the <grvl_login_btn> mode is active/visible -->
+                        <a href="" class="user_thumb" style=" "></a>
+                        <button class="btn grvl_logout_btn">Log Out</button>
+                    </li>
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav> <!-- Navigation END -->
+
+    <header class="gravll_inner_header news_image_id_09"> <!-- The logic of image injection into the header to be figured out by the backend team -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="h_banner_inner">
+                    <div class="inner_header_ghost_logo_small">
+                        <div class="title_double_texts_inner">
+                            <h5>News & Blogs</h5>
+                            <h1>Stay Updated</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header> <!-- Inner Header END -->
+
+    <div class="back_to_all_news_subsection_area">
+        <div class="container">
+            <div class="row">
+                <div class="back_to_all_news_btn_holder">
+                    <button class="btn back_to_all_news_btn"><i class="fas fa-arrow-left"></i>ALL NEWS</button>
+                </div>
+            </div>
+        </div>
+    </div> <!-- 'Back to All News' Button Holder END -->
+
+    <div class="news_thread_area">
+        <div class="container">
+            <div class="row">
+                <section class="news_title_holder">
+                    <h1>Uber to allow its drivers to smoke weed while driving</h1>
+                </section>
+                <section class="author_and_date_info_holder">
+                    <section class="col-sm-2 col-xs-2 author_holder">
+                        <span class="news_author"><i class="fas fa-user"></i>Dave Jackson</span>
+                    </section>
+                    <section class="col-sm-2 col-xs-2 date_holder">
+                        <span class="news_date"><i class="far fa-calendar-alt"></i>July 13, 2019</span>
+                    </section>
+                    <span class="news_thread_category news">NEWS</span>
+                </section>
+                <article class="news_thread_main_text">
+                    <p>
+                        At volutpat diam ut venenatis. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Mattis
+                        rhoncus urna neque viverra justo nec ultrices. Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames. Felis bibendum ut tristique et egestas. Eget sit amet tellus cras adipiscing
+                        enim eu turpis. Eu tincidunt tortor aliquam nulla facilisi. Accumsan lacus vel facilisis volutpat.
+                        Massa placerat duis <a href="#">ultricies lacus</a> sed turpis tincidunt id aliquet. Faucibus pulvinar elementum
+                        integer enim neque volutpat. Ridiculus mus mauris vitae ultricies. Varius vel pharetra vel turpis.
+                        Pellentesque elit ullamcorper dignissim cras. Enim eu turpis egestas pretium aenean pharetra.
+                        Ridiculus mus mauris vitae ultricies. Auctor augue mauris augue neque gravida in fermentum et.
+                        Turpis tincidunt id aliquet risus feugiat. Interdum velit euismod in pellentesque massa placerat
+                        duis ultricies lacus. Consectetur a erat nam at lectus urna duis convallis convallis. Tempor orci
+                        dapibus ultrices in.
+                        Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Mus mauris vitae ultricies leo.
+                        Molestie at elementum eu facilisis sed odio. Sit amet tellus cras adipiscing. At augue eget arcu dictum
+                        varius. Ac ut consequat semper viverra nam. Quis enim lobortis scelerisque fermentum dui faucibus.
+                        Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. At tempor commodo ullamcorper
+                        a lacus vestibulum. Ornare massa eget egestas purus viverra accumsan. Orci sagittis eu volutpat odio
+                        facilisis mauris sit. Lorem ipsum dolor sit amet consectetur adipiscing elit ut aliquam. Maecenas
+                        volutpat blandit aliquam etiam erat. Sed vulputate odio ut enim blandit volutpat. Elementum nisi quis
+                        eleifend quam adipiscing vitae proin sagittis. Venenatis lectus magna fringilla urna porttitor
+                        rhoncus dolor.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet mauris. Purus semper eget duis
+                        at tellus at urna condimentum. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem.
+                        Cras adipiscing enim eu turpis egestas pretium aenean. Dignissim convallis aenean et tortor at risus
+                        viverra adipiscing. Vitae proin sagittis nisl rhoncus mattis rhoncus. Sit amet mauris commodo quis
+                        imperdiet massa. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Sed viverra ipsum nunc aliquet
+                        bibendum enim facilisis gravida. Ut morbi tincidunt augue interdum velit euismod. Purus sit amet volutpat
+                        consequat mauris. Scelerisque in dictum non consectetur a. Tristique risus nec feugiat in fermentum
+                        posuere.
+                    </p>
+                </article>
+                <div class="aux_full_width_news_thread_image_holder">
+                    <section class="aux_full_width_news_thread_image" style="background: url('img/news_thread_image_example_01.jpg') center center no-repeat; background-size: cover;"></section>
+                </div>
+                <article class="news_thread_main_text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Integer quis auctor elit sed vulputate mi sit amet mauris. Purus semper eget duis
+                        at tellus at urna condimentum. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere lorem.
+                        Cras adipiscing enim eu turpis egestas pretium aenean. Dignissim convallis aenean et tortor at risus
+                        viverra adipiscing. Vitae proin sagittis nisl rhoncus mattis rhoncus. Sit amet mauris commodo quis
+                        imperdiet massa. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Sed viverra ipsum nunc aliquet
+                        bibendum enim facilisis gravida. Ut morbi tincidunt augue interdum velit euismod. Purus sit amet volutpat
+                        consequat mauris. Scelerisque in dictum non consectetur a. Tristique risus nec feugiat in fermentum
+                        posuere.
+                    </p>
+                    <p>
+                        Egestas erat imperdiet sed euismod nisi porta lorem. Faucibus vitae aliquet nec ullamcorper sit amet
+                        risus nullam eget. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Viverra ipsum
+                        nunc aliquet bibendum enim facilisis. Feugiat nibh sed pulvinar proin gravida. In iaculis nunc sed augue.
+                        Suspendisse faucibus interdum posuere lorem ipsum dolor. Eget mauris pharetra et ultrices neque.
+                        Auctor neque vitae tempus quam. Ipsum dolor sit amet consectetur adipiscing. Amet porttitor eget
+                        dolor morbi non arcu risus quis varius.
+                        Quam adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna. Ac ut consequat semper viverra
+                        nam libero justo laoreet sit. Sit amet venenatis urna cursus eget nunc scelerisque viverra. Enim eu
+                        turpis egestas pretium aenean pharetra. Ac tincidunt vitae semper quis. Sed egestas egestas fringilla
+                        phasellus faucibus scelerisque <a href="#">eleifend</a> donec pretium. Tempor commodo ullamcorper a lacus vestibulum.
+                        Elit duis tristique sollicitudin nibh sit amet commodo nulla facilisi. Tempus urna et pharetra pharetra
+                        massa. Aliquet risus feugiat in ante metus. Id nibh tortor id aliquet lectus proin nibh nisl condimentum.
+                        Feugiat pretium nibh ipsum consequat nisl vel.
+                        At volutpat diam ut venenatis. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Mattis
+                        rhoncus urna neque viverra justo nec ultrices. Pellentesque habitant morbi tristique senectus et netus et
+                        malesuada fames. Felis bibendum ut tristique et egestas. Eget sit amet tellus cras adipiscing enim eu turpis.
+                        Eu tincidunt tortor aliquam nulla facilisi. Accumsan lacus vel facilisis volutpat. Massa placerat duis ultricies
+                        lacus sed turpis tincidunt id aliquet. Faucibus pulvinar elementum integer enim neque volutpat. Ridiculus mus mauris
+                        vitae ultricies. Varius vel pharetra vel turpis. Pellentesque elit ullamcorper dignissim cras. Enim eu turpis
+                        egestas pretium aenean pharetra. Ridiculus mus mauris vitae ultricies. Auctor augue mauris augue neque gravida
+                        in fermentum et. Turpis tincidunt id aliquet risus feugiat. Interdum velit euismod in pellentesque massa
+                        placerat duis ultricies lacus. Consectetur a erat nam at lectus urna duis convallis convallis.
+                    </p>
+                    <p>
+                        At volutpat diam ut venenatis. Ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Mattis
+                        rhoncus urna neque viverra justo nec ultrices. Pellentesque habitant morbi tristique senectus et netus
+                        et malesuada fames. Felis bibendum ut tristique et egestas. Eget sit amet tellus cras adipiscing
+                        enim eu turpis. Eu tincidunt tortor aliquam nulla facilisi. Accumsan lacus vel facilisis volutpat.
+                        Massa placerat duis ultricies lacus sed turpis tincidunt id aliquet. Faucibus pulvinar elementum
+                        integer enim neque volutpat. Ridiculus mus mauris vitae ultricies. Varius vel pharetra vel turpis.
+                        Pellentesque elit ullamcorper dignissim cras. Enim eu turpis egestas pretium aenean pharetra.
+                        Ridiculus mus mauris vitae ultricies. Auctor augue mauris augue neque gravida in fermentum et.
+                        Turpis tincidunt id aliquet risus feugiat. Interdum velit euismod in pellentesque massa placerat
+                        duis ultricies lacus. Consectetur a erat nam at lectus urna duis convallis convallis. Tempor orci
+                        dapibus ultrices in.
+                        Commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit. Mus mauris vitae ultricies leo.
+                        Molestie at elementum eu facilisis sed odio. Sit amet tellus cras adipiscing. At augue eget arcu dictum
+                        varius. Ac ut consequat semper viverra nam. Quis enim lobortis scelerisque fermentum dui faucibus.
+                        Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. At tempor commodo ullamcorper
+                        a lacus vestibulum. Ornare massa eget egestas purus viverra accumsan. Orci sagittis eu volutpat odio
+                        facilisis mauris sit. Lorem ipsum dolor <a href="#">sit amet consectetur</a> adipiscing elit ut aliquam. Maecenas
+                        volutpat blandit aliquam etiam erat. Sed vulputate odio ut enim blandit volutpat. Elementum nisi quis
+                        eleifend quam adipiscing vitae proin sagittis. Venenatis lectus magna fringilla urna porttitor
+                        rhoncus dolor.
+                    </p>
+                </article>
+                <div class="news_thread_share_options">
+                    <section class="col-sm-2 col-xs-4 share_button_holder">
+                        <button id="shareNewsViaFacebook" class="btn share_news_btn fb"><i class="fab fa-facebook-f"></i>SHARE</button>
+                    </section>
+                    <section class="col-sm-2 col-xs-4 share_button_holder">
+                        <button id="shareNewsViaTwitter" class="btn share_news_btn tw"><i class="fab fa-twitter"></i>TWEET</button>
+                    </section>
+                    <section class="col-sm-2 col-xs-4 share_button_holder">
+                        <button id="shareNewsViaPinterest" class="btn share_news_btn pin"><i class="fab fa-pinterest-p"></i>PIN</button>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- News Thread Area END -->
+
+    <footer class="gravll_footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer_inner_content_holder">
+                    <div class="col-sm-3 footer_logo_holder">
+                        <span class="footerlogo"></span>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_links_holder">
+                        <ul class="footer_links">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 footer_links_holder">
+                        <ul class="footer_links">
+                            <li><a href="#">Get a Quote</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-3 subscriber_holder">
+                        <form role="form" id="gravllSubscriber" class="gravll_subscriber">
+                            <h5 class="subscriber_ttl">Subscribe to our newsletter</h5>
+                            <div class="form-group footer_form_group">
+                                <label for="footerSubscriber"></label>
+                                <button type="submit" class="inline_subscribe_btn"><i class="fas fa-paper-plane"></i></button>
+                                <input type="text" class="form-control grvl_footer_sbscrbr" id="footerSubscriber">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottommost_stripe">
+            <span class="ase_logo"></span>
+            <section class="footer_notes_holder">
+                <small class="footer_notes">&copy;2019 <span>GRAVLL</span> All Rights Reserved.</small>
+            </section>
+            <section class="footer_socials_holder">
+                <ul class="footer_socials">
+                    <li><a href=# class="footer_social_icon f_fb hvr-float"></a></li>
+                    <li><a href=# class="footer_social_icon f_tw hvr-float"></a></li>
+                    <li><a href=# class="footer_social_icon f_insta hvr-float"></a></li>
+                    <li><a href=# class="footer_social_icon f_in hvr-float"></a></li>
+                </ul>
+            </section>
+
+        </div>
+        <span class="footer_car_1"></span>
+        <span class="footer_car_2"></span>
+    </footer> <!-- Footer END -->
+
+</div> <!-- Outermost Wrapper END-->
+
+<!-- jQuery'z -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/datepicker.js"></script>
+<!-- Include English language -->
+<script type="text/javascript" src="js/datepicker.en.js"></script>
+
+<!-- JSz -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="slick-1.6.0/slick/slick.js"></script>
+<script type="text/javascript" src="js/gravll.js"></script>
+<script src="js/select2.full.js"></script>
+<script type="text/javascript">
+
+    $('#registerYourBirthMonth, #registerYourBirthDay, #registerYourBirthYear').select2({
+        width: '100%',
+        minimumResultsForSearch: -1
+    });
+
+    $('#vehicleMake').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "VEHICLE MAKE"
+    });
+
+    $('#vehicleModel').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "VEHICLE MODEL"
+    });
+
+    $('#vehicleYear').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "VEHICLE YEAR"
+    });
+
+    $('#vehicleMileage').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "VEHICLE MILEAGE"
+    });
+
+    $('#time').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "TIME"
+    });
+
+    $('#service').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "SERVICE"
+    });
+
+    $('#subService').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "SUB-SERVICE"
+    });
+
+    $('#careerLocation').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "LOCATION"
+    });
+
+    $('#careerJobType').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "JOB TYPE"
+    });
+
+    $('#careerSalary').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "SALARY ESTIMATE"
+    });
+
+    $('#dateAdded').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "DATE ADDED"
+    });
+
+    $('#threadType').select2({
+        width: '100%',
+        minimumResultsForSearch: -1,
+        placeholder: "TYPE"
+    });
+
+
+</script>
+
+
+
+</body>
+
+</html>

@@ -935,7 +935,50 @@
 
 
 
+/* >>>>>>>>>>>> NEWS THREAD <<<<<<<<<<<< */
 
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .share_button_holder {width: 23%;}
+}
+
+@media screen and (max-width: 767px){
+    .back_to_all_news_subsection_area {padding-left: 22px;}
+    .news_thread_area {padding-left: 22px; padding-right: 22px;}
+
+    .share_button_holder {width: 33%;}
+}
+
+@media screen and (max-width: 750px){
+    .news_title_holder {padding-top: 5px;}
+    .author_holder {width: 28%;}
+    .date_holder {width: 28%;}
+
+    .news_title_holder h1 {margin-top: 8px; font-size: 2rem;}
+
+}
+
+@media screen and (max-width: 574px){
+    .news_thread_category {width: 101px;}
+}
+
+@media screen and (max-width: 475px){
+    .author_holder {width: 40%;}
+    .date_holder {width: 30%;}
+}
+
+@media screen and (max-width: 420px){
+    .news_thread_category {width: 100%;}
+    .author_and_date_info_holder {height: 78px;}
+
+    .author_holder {width: 50%;}
+    .date_holder {width: 50%;}
+
+    .news_thread_share_options {height: 240px;}
+    .share_button_holder {width: 100%; margin-bottom: 12px; padding-right: 0;}
+
+}
 
 
 
