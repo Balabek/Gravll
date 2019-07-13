@@ -985,6 +985,36 @@
 
 
 
+/* >>>>>>>>>>>> TERMS & CONDITIONS <<<<<<<<<<<< */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    .title_double_texts_inner_inverted {width: 99%;}
+}
+
+@media screen and (max-width: 525px){
+    .title_double_texts_inner_inverted h1 {font-size: 3rem;}
+    .title_double_texts_inner_inverted h5 {font-size: 1rem;}
+}
+
+@media screen and (max-width: 410px){
+    .title_double_texts_inner_inverted h1 {font-size: 2.5rem;}
+    .title_double_texts_inner_inverted h5 {font-size: 0.9rem;}
+}
+
+@media screen and (max-width: 376px){
+    .title_double_texts_inner_inverted h1 {font-size: 2.2rem;}
+    .title_double_texts_inner_inverted h5 {font-size: 0.77rem;}
+}
+
+@media screen and (max-width: 355px){
+    .title_double_texts_inner_inverted h5 {font-size: 0.6rem;}
+}
+
+@media screen and (max-width: 330px){
+    .title_double_texts_inner_inverted h5 {font-size: 0.5rem;}
+}
 
 
 

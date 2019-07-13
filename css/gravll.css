@@ -3604,3 +3604,144 @@ button.share_news_btn.pin:hover, button.share_news_btn.pin:focus {
 }
 
 
+
+
+
+
+/* >>>>>>>>>>>> TERMS & CONDITIONS (GENERAL TEMPLATE FOR ALL TEXTUAL PAGES) <<<<<<<<<<<< */
+
+.gravll_inner_header.blank_header {
+    position: relative;
+    min-height: 475px;
+    height: auto;
+    width: 100%;
+    background: #ffffff;
+}
+
+.inner_header_ghost_logo_small_blue {
+    display: block;
+    position: absolute;
+    bottom: 28px;
+    height: 280px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1;
+    background: url(../img/gravll_cut_blue.png) center center no-repeat;
+    background-size: contain;
+}
+
+.title_double_texts_inner_inverted {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 70px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.title_double_texts_inner_inverted h5 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 14px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title_double_texts_inner_inverted h1 {
+    font-family: Panton, sans-serif;
+    font-size: 54px;
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+    text-transform: none;
+}
+
+.terms_midmain_area {
+    position: relative;
+    display: block;
+    min-height: 800px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.terms_content_holder {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1.gravll_general_title {
+    font-family: Panton, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: left;
+}
+
+article.gravll_general_article {
+    padding-top: 8px;
+    margin-bottom: 55px;
+    clear: both;
+}
+
+article.gravll_general_article p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.7;
+}
+
+article.gravll_general_article p a {
+    color: #3AAAF2;
+    font-weight: 600;
+    text-decoration: none;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+article.gravll_general_article p a:hover, article.gravll_general_article p a:focus, article.gravll_general_article p a:active {
+    color: #715AFF;
+}
+
+ul.gravll_general_list {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    padding-left: 18px;
+}
+
+ul.gravll_general_list li {
+    list-style-type: disc;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #000000;
+    line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
