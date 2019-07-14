@@ -1020,3 +1020,65 @@
 
 
 
+
+
+/* >>>>>>>>>>>> CHECKOUT STEPS <<<<<<<<<<<< */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    .prompt_text_holder {width: 95%;}
+    .optional_info_holder {width: 95%;}
+}
+
+@media screen and (max-width: 525px){
+    .payment_method_holder_step_1 {width: 385px;}
+    .payment_method_holder_step_2 {width: 385px;}
+}
+
+@media screen and (max-width: 400px){
+    .payment_method_holder_step_1 {width: 285px;}
+    .payment_method_holder_step_2 {width: 285px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

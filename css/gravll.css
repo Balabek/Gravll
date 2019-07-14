@@ -3732,12 +3732,73 @@ ul.gravll_general_list li {
 
 
 
+/* >>>>>>>>>>>> CHECK OUT (STEPS 1 & 2) <<<<<<<<<<<< */
 
+.checkout_midmain_area {
+    display: block;
+    position: relative;
+    min-height: 700px;
+    padding-top: 75px;
+    padding-bottom: 55px;
+    background: #ffffff;
+}
 
+.prompt_text_holder {
+    height: 90px;
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
 
+.prompt_text_holder p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000000;
+    text-align: center;
+}
 
+span.selected_service, span.checkout_sum {
+    font-weight: 700;
+}
 
+/* This is a temporary element styling, which is only aimed at providing approximate borders of the payment widget */
+.payment_method_holder_step_1 {
+    display: block;
+    position: relative;
+    top: 45px;
+    width: 485px;
+    height: 200px;
+    margin: auto;
+    outline: 1px dotted #d4d4d4;
+    background: #fafafa;
+}
 
+.payment_method_holder_step_2 {
+    display: block;
+    position: relative;
+    top: 45px;
+    width: 485px;
+    height: 255px;
+    margin: auto;
+    outline: 1px dotted #d4d4d4;
+    background: #fafafa;
+}
+
+.optional_info_holder {
+    display: block;
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 105px;
+}
+
+.optional_info_holder p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #cecece;
+    text-align: center;
+}
 
 
 
