@@ -206,6 +206,60 @@
 
 
 
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Add Vehicle Modal ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 767px){
+    .gravll_modal_dialog.add_a_vehicle_dialog {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .gravll_modal_dialog.add_a_vehicle_dialog {
+        width: 475px;
+    }
+}
+
+@media screen and (max-width: 524px){
+    .gravll_modal_dialog.add_a_vehicle_dialog {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 422px){
+    .gravll_modal_dialog.add_a_vehicle_dialog {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .gravll_modal_dialog.add_a_vehicle_dialog {
+        width: 362px;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .gravll_modal_dialog.add_a_vehicle_dialog {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .gravll_modal_dialog.add_a_vehicle_dialog {
+        width: 285px;
+    }
+}
+
+
+
+
+
+
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
 /* =========== Navigation ========== */
 /* !!!!!!!!!!!!!!!!!!!!!!!! */
@@ -1040,6 +1094,112 @@
     .payment_method_holder_step_1 {width: 285px;}
     .payment_method_holder_step_2 {width: 285px;}
 }
+
+
+
+
+
+
+
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Profile Page ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1199px){
+    ul.rating_result li i {font-size: 0.6rem;}
+    span.status_circle > i {font-size: 0.8rem;}
+    span.status_circle {font-size: 0.6rem;}
+}
+
+@media screen and (max-width: 991px){
+    .upload_avatar_btn_holder {left: 50px; width: 60%;}
+
+    .vehicle_thumb {height: 110px;}
+    a.add_vehicle {height: 110px;}
+
+    ul.rating_result li i {font-size: 0.4rem;}
+}
+
+@media screen and (max-width: 767px){
+    .profile_midmain_area {padding-left: 20px; padding-right: 20px;}
+    .upload_avatar_btn_holder {left: 75px; width: 65%;}
+
+    .vehicle_thumb {height: 145px; width: 45%;}
+    a.add_vehicle {height: 145px; width: 45%;}
+    .vehicle_info_holder {padding-left: 0; min-height: 985px;}
+    .vehicle_details_holder {padding-left: 0;}
+    .vehicle_details {padding-top: 0;}
+    ul.vehicle_details_list {
+        position: relative; top: -22px;
+    }
+
+    .personal_info_holder {padding-right: 0;}
+    .grvl_form_group_nonmodal {padding-right: 0;}
+
+    .service_table_holder {padding-top: 5px;}
+    textarea.gravll_user_comment_readonly {width: 100%;}
+
+    .pseudo_ttl h5 {display: none;}
+    .pseudo_ttl_xs h5 {display: block;}
+    .pseudo_ttl_xs {margin-bottom: 18px;}
+    ul.rating_result li i {font-size: 0.88rem;}
+
+    .pseudo_ttl_xs.clearboth {clear: both; top: 17px; margin-bottom: 36px;}
+
+    span.status_circle > i {font-size: 1rem;}
+    span.status_circle {font-size: 0.8rem;}
+
+    .password_settings_group {margin-bottom: 28px; padding-right: 0;}
+    .change_password_btn_holder {padding-top: 18px;}
+}
+
+@media screen and (max-width: 650px){
+    .upload_avatar_btn_holder {left: 105px; width: 67%;}
+}
+
+@media screen and (max-width: 550px){
+    .vehicle_thumb {height: 275px; width: 100%;}
+    .vehicle_info_holder {padding-right: 0;}
+    a.add_vehicle {height: 275px; width: 100%;}
+    .vehicle_thumb_box {padding-left: 0; padding-right: 0;}
+
+}
+
+@media screen and (max-width: 505px){
+    .avatar_holder {display: block; float: none; margin: 0 auto; width: 200px;}
+    .upload_avatar_btn_holder {
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        left: 0;
+        position: relative;
+        top: 25px;
+    }
+
+    .small_warning_holder p {margin-bottom: 22px; text-align: center;}
+}
+
+@media screen and (max-width: 440px){
+    .vehicle_thumb {height: 220px;}
+    a.add_vehicle {height: 220px;}
+}
+
+@media screen and (max-width: 360px){
+    .vehicle_thumb {height: 190px;}
+    a.add_vehicle {height: 190px;}
+}
+
+
+
+
+
+
+
+
 
 
 

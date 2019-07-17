@@ -3805,4 +3805,506 @@ span.selected_service, span.checkout_sum {
 
 
 
+/* >>>>>>>>>>>> PROFILE <<<<<<<<<<<< */
+
+.profile_midmain_area {
+    display: block;
+    position: relative;
+    min-height: 750px;
+    height: auto;
+    background: #ffffff;
+    padding-top: 45px;
+    padding-bottom: 85px;
+}
+
+.profile_name_and_avatar_holder {
+    height: 315px;
+}
+
+h1.profile_title {
+    font-family: Panton, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000000;
+    text-align: left;
+}
+
+h1.profile_title span {
+    font-weight: 300;
+}
+
+span.profile_name {
+    font-weight: 700 !important;
+}
+
+.avatar_holder {
+    position: relative;
+    width: 22%;
+    padding-top: 22px;
+    float: left;
+}
+
+.avatar.default_avatar {
+    position: relative;
+    top: 5px;
+    float: left;
+    margin-right: 36px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: url('../img/Face Default.png') center center no-repeat;
+    background-size: cover;
+}
+
+.upload_avatar_btn_holder {
+    position: relative;
+    padding-top: 75px;
+    width: 50%;
+}
+
+.avatar_upload_btn_wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.avatar_upload_btn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #3AAAF2;
+    letter-spacing: 2px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: 11px 20px;
+    width: 205px;
+    height: 46px;
+    border: none !important;
+    cursor: pointer !important;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+span.btn_txt_avatar {
+    display: inline-block;
+    position: relative;
+    bottom: 0;
+}
+
+.avatar_upload_btn > i {
+    font-size: 1.5rem;
+    margin-right: 4px;
+    color: #ffffff;
+}
+
+.avatar_upload_btn input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    cursor: pointer !important;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.small_warning_holder {
+    width: inherit;
+    padding-left: 0;
+    float: left;
+    position: relative;
+    top: 4px;
+}
+
+.small_warning_holder p {
+    font-size: 0.8rem;
+    color: #666666;
+    text-align: left;
+}
+
+.personal_info_and_vehicle_holder {
+    padding-top: 15px;
+}
+
+.personal_info_holder {
+    padding-left: 0;
+    margin-bottom: 70px;
+}
+
+.profile_form_holder {
+    padding-top: 32px;
+}
+
+label.gravll_input_label {
+    display: block;
+    position: relative;
+    font-size: 0.8rem;
+    color: #999999;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.grvl_form_group_nonmodal {
+    margin-bottom: 32px;
+    padding-right: 12px;
+    padding-left: 0;
+}
+
+.save_changes_btn_holder {
+    clear: both;
+    padding-top: 22px;
+}
+
+button.save_changes_btn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #3AAAF2;
+    letter-spacing: 2px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    padding: 11px 20px;
+    width: 205px;
+    height: 46px;
+
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+button.save_changes_btn:hover, button.save_changes_btn:focus {
+    color: #ffffff;
+    background-color: #338ecd;
+}
+
+.vehicle_info_holder {
+    padding-left: 32px;
+    min-height: 1100px;
+    height: auto;
+    overflow: scroll;
+}
+
+.vehicle_thumbs_holder {
+    padding-top: 33px;
+}
+
+.vehicle_thumb_box {
+    padding-left: 0;
+    position: relative;
+    margin-bottom: 47px;
+}
+
+.edit_delete_stripe {
+    position: absolute;
+    width: 100%;
+    height: 32px;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    opacity: 0;
+    padding-top: 5px;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+ul.edit_delete {
+    float: right;
+}
+
+ul.edit_delete li {
+    list-style-type: none;
+    float: left;
+    margin-right: 8px;
+}
+
+ul.edit_delete li a {
+    font-size: 1.2rem;
+    color: #ffffff;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+ul.edit_delete li a:hover, ul.edit_delete li a:focus {
+    color: #3AAAF2;
+}
+
+.vehicle_thumb {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 145px;
+    background-color: #d8d8d8;
+    color: #666666;
+    cursor: pointer;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.vehicle_thumb.default_thumb {
+    background: url('../img/vehicle_default.png') center center no-repeat;
+    background-size: cover;
+}
+
+.vehicle_thumb:hover .edit_delete_stripe {
+    opacity: 1;
+}
+
+.vehicle_thumb_box h6 {
+    display: block;
+    position: relative;
+    font-size: 0.8rem;
+    color: #999999;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.vehicle_details {
+    padding-top: 22px;
+}
+
+ul.vehicle_details_list {
+    padding-left: 0;
+}
+
+ul.vehicle_details_list li {
+    list-style-type: none;
+    display: block;
+    position: relative;
+    font-size: 0.8rem;
+    color: #999999;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+ul.vehicle_details_list li span {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: none;
+    color: #000000;
+}
+
+.vehicle {
+    clear: both;
+    margin-bottom: 32px;
+}
+
+a.add_vehicle {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 145px;
+    background-color: #d8d8d8;
+    color: #666666;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+span.plus {
+    display: flex;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background: url('../img/plus_grey.svg') center center no-repeat;
+    background-size: contain;
+
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+a.add_vehicle:hover, a.add_vehicle:focus {
+    background: #666666;
+}
+
+a.add_vehicle:hover span.plus {
+    background: url('../img/plus_white.svg') center center no-repeat;
+    background-size: contain;
+}
+a.add_vehicle:focus span.plus {
+    background: url('../img/plus_white.svg') center center no-repeat;
+    background-size: contain;
+}
+
+.service_history_subsection {
+    display: block;
+    clear: both;
+    border-top: 1px solid #eeeeee;
+    min-height: 500px;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 55px;
+}
+
+.service_table_holder {
+    padding-top: 50px;
+}
+
+.pseudo_ttl {
+    padding-left: 0;
+}
+
+.pseudo_ttl h5 {
+    display: block;
+    position: relative;
+    font-size: 0.8rem;
+    color: #999999;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.pseudo_ttl_xs {
+    padding-left: 4px;
+}
+
+.pseudo_ttl_xs h5 {
+    display: none;
+    position: relative;
+    font-size: 0.8rem;
+    color: #999999;
+    font-weight: 300;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.well.service_well {
+    min-height: 150px;
+    padding: 12px 10px 12px 10px;
+    height: auto;
+    display: block;
+    position: relative;
+    top: 22px;
+    background: #f8f8f8;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+p.well_text {
+    font-size: 0.9rem;
+    color: #000000;
+    text-align: left;
+}
+
+ul.rating_result {
+    padding-left: 0;
+}
+
+ul.rating_result li {
+    list-style-type: none;
+    float: left;
+    margin-right: 2px;
+}
+
+ul.rating_result li i {
+    font-size: 0.7rem;
+    color: #666666;
+}
+
+textarea.gravll_user_comment_readonly {
+    height: 92px;
+    width: 90%;
+    text-align: left !important;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    padding-left: 12px;
+    padding-top: 12px;
+    font-size: 0.8rem;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+    resize: none;
+}
+
+span.status_circle {
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+span.status_circle.complete {color: #55D6BE;}
+span.status_circle.canceled {color: #e6c900;}
+span.status_circle.inprogress {color: #3AAAF2;}
+
+span.status_circle > i {
+    position: relative;
+    top: 1px;
+    font-size: 1rem;
+    margin-right: 3px;
+}
+
+.password_settings_subsection {
+    padding-top: 1px;
+}
+
+.password_settings_subsection {
+    height: auto;
+}
+
+form.profile_password_settings_form {
+    padding-top: 32px;
+}
+
+.password_settings_group {
+    padding-left: 0;
+}
+
+.password_settings_group:last-child {
+    padding-right: 0;
+}
+
+.change_password_btn_holder {
+    clear: both;
+    padding-top: 35px;
+}
+
+.add_vehicle_photo_buttons_holder {
+    padding-top: 26px;
+    margin-bottom: 18px;
+    text-align: center;
+    clear: both;
+}
+
+
+
+
+
+
+
 
