@@ -31,7 +31,7 @@ body {
 .outermost_wrapper {
     position: relative;
     width: 100%;
-    overflow: hidden !important;
+    overflow-x: hidden !important;
 }
 
 a:focus, button:focus {
@@ -270,7 +270,7 @@ button.grvl_login_btn:hover, button.grvl_login_btn:focus {
     right: 0;
     left: 0;
     top: 70px;
-    width: 70%;
+    width: 73%;
     margin: 0 auto;
 }
 
@@ -1039,6 +1039,7 @@ p.t_location {
     overflow: hidden;
     height: 475px;
 }
+
 
 .slick-dots {
     bottom: -135px;
