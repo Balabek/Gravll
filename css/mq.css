@@ -637,6 +637,15 @@
     ul.footer_links li a {font-size: 0.7rem;}
 }
 
+@media screen and (max-width: 850px){
+    .footer_notes_holder {text-align: center; top: 30px;}
+    .subscriber_holder {margin-bottom: 105px;}
+    .footer_socials_holder {float: none; display: inherit; top: 45px; text-align: center;}
+    ul.footer_socials {text-align: center; display: inline-block;}
+    .footer_bottommost_stripe {height: 170px;}
+    span.ase_logo {height: 50px;}
+}
+
 @media screen and (max-width: 767px){
     span.footerlogo {display: inline-block; text-align: center; width: 100%; margin-bottom: 55px;}
 
@@ -649,8 +658,8 @@
     span.ase_logo {top: 18px; height: 50px;}
     small.footer_notes {font-size: 0.7rem;}
     a.footer_social_icon {width: 22px; height: 22px;}
-    .footer_socials_holder {top: -40px;}
-    .footer_bottommost_stripe {height: 85px;}
+    /*.footer_socials_holder {top: -40px;}*/
+    /*.footer_bottommost_stripe {height: 85px;}*/
 }
 
 @media screen and (max-width: 561px){
@@ -664,7 +673,7 @@
 }
 
 @media screen and (max-width: 530px){
-    .footer_bottommost_stripe {height: 160px;}
+    .footer_bottommost_stripe {height: 170px;}
     .footer_notes_holder {text-align: center; top: 30px;}
     .subscriber_holder {margin-bottom: 105px;}
     .footer_socials_holder {float: none; display: inherit; top: 45px; text-align: center;}
@@ -770,24 +779,29 @@
 
 @media screen and (max-width: 632px){
     span.decorative_rectangle_grey {left: 63%; bottom: 90px;}
-    .video_txt_holder {top: -35px;}
+    .video_txt_holder {top: 50px;}
+    article.video_txt {margin-bottom: 75px;}
     .about_us_video_area {padding-bottom: 35px;}
 }
 
 @media screen and (max-width: 485px){
     span.decorative_rectangle_grey {left: 55%; bottom: 170px;}
-    .video_txt_holder {top: -100px;}
-    .about_us_video_area {padding-bottom: 15px;}
+    /*.video_txt_holder {top: -100px;}*/
+    .about_us_video_area {padding-bottom: 15px; padding-top: 25px;}
 }
 
 @media screen and (max-width: 410px){
     span.decorative_rectangle_grey {display: none;}
-    .video_player_holder {height: 355px;}
+    /*.video_player_holder {height: 355px;}*/
+}
+
+@media screen and (max-width: 396px){
+    .gravll_acronym {height: 320px;}
+    .video_player_holder {height: 320px;}
 }
 
 @media screen and (max-width: 360px){
-
-    .video_player_holder {height: 325px;}
+    /*.video_player_holder {height: 325px;}*/
 }
 
 
@@ -1197,11 +1211,82 @@
 
 
 
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Services (New 2020 Layout) ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 991px){
+    h4.sub_item_title {font-size: 1rem; top: 10px;}
+}
+
+@media screen and (max-width: 767px){
+    .subservice_item {clear: both; margin-bottom: 85px;}
+    h4.sub_item_title {top: 26px;}
+}
 
 
 
 
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
+/* =========== Coming Soon ========== */
+/* !!!!!!!!!!!!!!!!!!!!!!!! */
 
+/* >>>>> XL/XXL <<<<< */
+
+@media screen and (min-width: 1600px){
+    .videobgd {height: 720px;}
+}
+
+@media screen and (min-width: 1900px){
+    .videobgd {height: 800px;}
+}
+
+@media screen and (min-width: 2400px){
+    .videobgd {height: 990px;}
+}
+
+@media screen and (min-width: 3200px){
+    .videobgd {height: 1500px;}
+}
+
+@media screen and (min-width: 4000px){
+    .videobgd {height: 1650px;}
+}
+
+
+
+/* >>>>> SM/XS <<<<< */
+
+@media screen and (max-width: 1160px){
+    h1.comingsoontext {font-size: 4rem;}
+}
+
+@media screen and (max-width: 920px){
+    h1.comingsoontext {font-size: 3.3rem;}
+}
+
+@media screen and (max-width: 888px){
+    .comingsoon_subscriber_holder {width: 65%;}
+}
+
+@media screen and (max-width: 750px){
+    h1.comingsoontext {font-size: 2.6rem;}
+}
+
+@media screen and (max-width: 524px){
+    .comingsoon_subscriber_holder {width: 85%;}
+}
+
+@media screen and (max-width: 392px){
+    .comingsoon_subscriber_holder {width: 90%;}
+    h5.comingsoon_subscriber_ttl {font-size: 0.77rem;}
+}
+
+@media screen and (max-width: 360px){
+    h1.comingsoontext {font-size: 2rem;}
+}
 
 
 

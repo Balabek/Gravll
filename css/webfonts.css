@@ -129,3 +129,62 @@
     font-weight: bold;
     font-style: normal;
 }
+
+
+@font-face {
+    font-family: 'HelveticaNeue-Condensed Thin';
+    src: url('../fonts/HelveticaNeue/HelveticaNeue-Condensed Thin.eot');
+    src: url('../fonts/HelveticaNeue/HelveticaNeue-Condensed Thin.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeue/HelveticaNeue-Condensed Thin.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueThinCond-CondensedRegularThin';
+    src: url('../fonts/HelveticaNeue/HelveticaNeueThinCond-CondensedRegularThin.svg#HelveticaNeueThinCond-CondensedRegularThin') format('svg'),
+    url('../fonts/HelveticaNeue/HelveticaNeueThinCond-CondensedRegularThin.ttf') format('truetype'),
+    url('../fonts/HelveticaNeue/HelveticaNeueThinCond-CondensedRegularThin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'HelveticaNeue-Condensed Bold';
+    src: url('../fonts/HelveticaNeue/HelveticaNeue-Condensed Bold.eot');
+    src: url('../fonts/HelveticaNeue/HelveticaNeue-Condensed Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeue/HelveticaNeue-Condensed Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCondensed-CondensedBold';
+    src: url('../fonts/HelveticaNeue/HelveticaNeueCondensed-CondensedBold.svg#HelveticaNeueCondensed-CondensedBold') format('svg'),
+    url('../fonts/HelveticaNeue/HelveticaNeueCondensed-CondensedBold.ttf') format('truetype'),
+    url('../fonts/HelveticaNeue/HelveticaNeueCondensed-CondensedBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'HelveticaNeue-Condensed';
+    src: url('../fonts/HelveticaNeue/HelveticaNeue-Condensed.eot');
+    src: url('../fonts/HelveticaNeue/HelveticaNeue-Condensed.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/HelveticaNeue/HelveticaNeue-Condensed.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCondensed-CondensedRegular';
+    src: url('../fonts/HelveticaNeue/HelveticaNeueCondensed-CondensedRegular.svg#HelveticaNeueCondensed-CondensedRegular') format('svg'),
+    url('../fonts/HelveticaNeue/HelveticaNeueCondensed-CondensedRegular.ttf') format('truetype'),
+    url('../fonts/HelveticaNeue/HelveticaNeueCondensed-CondensedRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
